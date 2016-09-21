@@ -47,12 +47,13 @@ Developer @GA in NYC
 
 body {
   color: #f0efef;
-  font-size: 1.625em;
+  font-size: 26px;
   line-height: 1.4;
   color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
+
 a {
   text-decoration: none;
 }
@@ -76,11 +77,27 @@ header {
   background: #033048;
   padding: 25px 0;
   overflow: hidden;
+  position: relative;
 }
 header .logo {
   color: #fff;
   float: left;
 }
+
+/*hamburger - hidden*/
+/*nav .line {
+  display: none;
+  width: 3em;
+  height: .3em;
+  background: yellow;
+  border-radius: 1em;
+  margin-top: .25em;
+}
+
+nav .line:first-of-type {
+  margin-top: .7em;
+}*/
+/*end hamburger*/
 
 header nav {
   float: right;
@@ -299,16 +316,21 @@ footer p {
 
 @media screen and (max-width: 768px){
 
+body {
+  font-size: 16px;
+}
+
 .container {
   width: 100%;
 }
 
 ul {
-  display: none;
+/*  display: none;*/
 }
 
 blockquote {
   font-size: .72em;
+  width: 80%;
 }
 
 #benefits {
@@ -316,13 +338,45 @@ blockquote {
 }
 
 #posts {
-  width: 100%;
+  width: 94%;
   margin-right: .76em;
 }
 
-aside #sidebar ul p {
-/*  width: 100%;*/ 
+img {
+  width: 100%;
 }
+
+
+/*hamburger menu*/
+
+/*header nav {
+  float: none;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav ul li:first-child {
+  position: absolute;
+  top: .25em;
+  right: .5em;
+}
+
+.line {
+  width: 2em;
+  margin: .25em .5em;
+  height: 3px;
+  background: yellow;
+  border: 1px solid yellow;
+}
+
+ul {
+  height: 0;
+  transition: all 1s;
+}
+*/
+
 
 }
 /*END @ MEDIA SCREEN*/
