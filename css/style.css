@@ -85,7 +85,7 @@ header .logo {
 }
 
 /*hamburger - hidden*/
-/*nav .line {
+nav .line {
   display: none;
   width: 3em;
   height: .3em;
@@ -96,7 +96,8 @@ header .logo {
 
 nav .line:first-of-type {
   margin-top: .7em;
-}*/
+}
+
 /*end hamburger*/
 
 header nav {
@@ -325,7 +326,7 @@ body {
 }
 
 ul {
-/*  display: none;*/
+  display: none;
 }
 
 blockquote {
@@ -346,37 +347,27 @@ img {
   width: 100%;
 }
 
-
 /*hamburger menu*/
-
-/*header nav {
-  float: none;
+nav .line {
+    display: block;
+    float: right;
 }
 
-nav ul li {
-  display: block;
+header nav li:first-child {
+    display: block;
+    position: absolute;
+    top: .25em;
+    right: .5em;
 }
 
-nav ul li:first-child {
-  position: absolute;
-  top: .25em;
-  right: .5em;
+ul .icon {
+    height: 0;
+    transition: all 1s;
 }
 
-.line {
-  width: 2em;
-  margin: .25em .5em;
-  height: 3px;
-  background: yellow;
-  border: 1px solid yellow;
+.open {
+    height: 20em;
 }
-
-ul {
-  height: 0;
-  transition: all 1s;
-}
-*/
-
 
 }
 /*END @ MEDIA SCREEN*/
